@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import '../../../../home.dart';
+import 'package:flutter_weather_app/app/routes/app_routes.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import '../../../config/style/app_string.dart';
 import '../../../config/style/custom_text_style.dart';
 
@@ -17,10 +19,7 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 2), () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => const HomeView()),
-      );
+      Get.offNamed(AppRoutes.home);
     });
   }
 

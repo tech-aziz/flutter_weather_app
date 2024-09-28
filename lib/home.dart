@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_weather_app/app/config/style/custom_text_style.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -12,7 +13,9 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Weather'),
+        backgroundColor: Colors.green,
+        title:  Text('Weather',style: textStyle(textColor: Colors.white),),
+        centerTitle: true,
       ),
       body: const Center(
         child: Text('Weather Details'),

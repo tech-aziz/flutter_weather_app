@@ -11,7 +11,10 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        backgroundColor: Colors.lightBlue,
+        title: const Text('Home'),
+        centerTitle: true,
+
       ),
     );
   }

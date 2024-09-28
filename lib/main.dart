@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
+import 'app/routes/app_routes.dart';
 import 'home.dart';
 
 void main() {
@@ -24,12 +25,13 @@ class MyApp extends StatelessWidget {
       designSize: const Size(375, 812),
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
+        initialRoute: AppRoutes.splash,
+        getPages: AppRoutes.pages,
         title: 'Flutter Weather App',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const HomeView(),
       ),
     );
   }
