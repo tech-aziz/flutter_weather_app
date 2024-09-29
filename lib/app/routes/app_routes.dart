@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
-
-import '../../home.dart';
+import '../modules/home/view/home_view.dart';
 import '../modules/splash/view/splash_view.dart';
 // Import your screen files
 
