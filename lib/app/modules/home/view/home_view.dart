@@ -46,7 +46,7 @@ class _HomeViewState extends State<HomeView> {
                 child: Column(
                   children: [
                     const SizedBox(
-                      height: 100,
+                      height: 60,
                     ),
                     Text(
                       'Dhaka',
@@ -88,17 +88,36 @@ class _HomeViewState extends State<HomeView> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              Image.asset(
-                                'assets/icons/cloudy.png',
-                                height: 130,
-                                width: 135,
+                              Expanded(
+                                child: Image.asset(
+                                  'assets/icons/cloudy.png',
+                                  height: 130,
+                                  width: 135,
+                                ),
                               ),
-                              Text(
-                                '13o',
-                                style: textStyle(
-                                    textColor: Colors.white,
-                                    fontSize: 123,
-                                    fontWeight: FontWeight.w700),
+
+
+
+
+                              Expanded(
+                                child: RichText(
+                                  text: const TextSpan(
+                                    children: [
+                                      TextSpan(
+                                          text: '13',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 100,
+                                          )),
+                                      TextSpan(
+                                          text: '0',
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 100,
+                                              fontFeatures: [FontFeature.superscripts()])),
+                                    ],
+                                  ),
+                                ),
                               ),
                             ],
                           ),
@@ -156,6 +175,9 @@ class _HomeViewState extends State<HomeView> {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      height: 8,
+                    ),
                     Expanded(
                       child: ListView.builder(
                         itemCount: weatherTimeList.length,
@@ -191,15 +213,15 @@ class _HomeViewState extends State<HomeView> {
                             end: Alignment.bottomRight, // End at the bottom right
                           ),
                           borderRadius: const BorderRadius.only(
-                              topLeft: Radius.circular(100),
-                              topRight: Radius.circular(100))),
+                              topLeft: Radius.circular(30),
+                              topRight: Radius.circular(30))),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
                             child: Container(
-                              height: 100,
+                              height: 90,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(16),
                                 border: Border.all(
@@ -279,7 +301,7 @@ class _HomeViewState extends State<HomeView> {
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 20),
                             child: Container(
-                              height: 100,
+                              height: 90,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(16),
                                 border: Border.all(
