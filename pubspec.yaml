@@ -46,6 +46,7 @@ dependencies:
   # for displaying Scalable Vector Graphics
   flutter_svg: ^2.0.10+1
   geolocator: ^8.2.0
+  intl: ^0.17.0
 
  
 

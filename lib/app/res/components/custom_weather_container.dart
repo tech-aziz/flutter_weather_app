@@ -53,7 +53,7 @@ Widget customWeatherContainer(
               text: TextSpan(
                 children: [
                   TextSpan(
-                      text: celsius.toString(),
+                      text: celsius..toString(),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 18,
@@ -64,7 +64,7 @@ Widget customWeatherContainer(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontFeatures: [FontFeature.superscripts()],
-                        fontSize: 20,
+                        fontSize: 22,
                       )),
                 ],
               ),
