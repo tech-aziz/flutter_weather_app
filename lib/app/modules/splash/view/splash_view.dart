@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_weather_app/app/routes/app_routes.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import '../../../config/style/app_string.dart';
-import '../../../config/style/custom_text_style.dart';
+import '../../../res/style/app_string.dart';
+import '../../../res/style/custom_text_style.dart';
+
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -15,6 +16,8 @@ class SplashView extends StatefulWidget {
 }
 
 class _SplashViewState extends State<SplashView> {
+
+
   @override
   void initState() {
     super.initState();
@@ -59,10 +62,18 @@ class _SplashViewState extends State<SplashView> {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 20),
                     child: AutoSizeText(
-                      AppString.companyName,
-                      style: textStyle(textColor: Colors.white, fontSize: 10),
+                      AppString.poweredBy,
+                      style: textStyle(textColor: Colors.white.withOpacity(0.6), fontSize: 12),
                     ),
                   ),
+                  const SizedBox(width: 4,),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: AutoSizeText(
+                      AppString.companyName,
+                      style: textStyle(textColor: Colors.white, fontSize: 16),
+                    ),
+                  )
                 ],
               ),
             ],
