@@ -2,6 +2,8 @@ Weather App:
 
 A mobile weather application developed using Flutter that provides real-time weather updates based on the user's current location. This app is designed to display the current temperature, the times of sunrise and sunset, and detailed temperature forecasts for two 12-hour periods (12:00 AM to 11:00 AM and 12:00 PM to 11:00 PM).
 
+APK File: https://drive.google.com/file/d/15tFVVOgl5SFHx2ZtNmw51VOOPHgUJY83/view?usp=sharing
+
 Features:
 
 Current Location: Automatically detects the user's location to provide accurate weather data.
